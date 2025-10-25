@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Stonks</title>
+</head>
+<body>
+    <p>Finding the largest number with the help of Argument Objects</p>
+    <p>From : 12, 22, 32, 45, 22</p>
+    <p id="result"></p>
+    <script>
+        function findMax()  {
+            var max = 0
+            for(i = 0; i < arguments.length; i++) {
+                if (arguments[i] > max){
+                    max = arguments[i];
+                }
+            }
+            return max;
+        }
+        document.getElementById("result").innerHTML = findMax( 12, 22, 32, 45, 22);
+    </script>
+</body>
+<body>
+    <script type="text/JavaScript">
+
+        var value = Math.acos(-1);
+        document.write("v1 : " + value + "<br>")
+         var value = Math.asin(1);
+        document.write("v2 : " + value + "<br>")
+         var value = Math.atan(12.5);
+        document.write("v3 : " + value + "<br>")
+    </script>
+</body>
+
+</html>
